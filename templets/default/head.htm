@@ -1,0 +1,27 @@
+<div class="top">
+  <div class="top_con">
+    <div class="top_con_l float"> 欢迎来到XXXXXXX </div>
+    <div class="top_con_r"> <a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a> | <a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a> <a> <img src="/skin/images/1_03.jpg" /> 官方微信 <img src="/skin/images/wei_1.jpg" class="weibo_img"/> </a> <a> <img src="/skin/images/2_04.jpg" /> 微信 <img src="/skin/images/wei_2.jpg" class="weibo_img"/> </a> <a href="http://weibo.com/" target="_blank"><img src="/skin/images/to_young.jpg" />致青春微博</a> </div>
+  </div>
+</div>
+<div class="header">
+  <div class="header_con">
+    <div class="logo float">
+      <h1><a href="/"></a></h1>
+    </div>
+    <div class="phone"></div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="nav">
+  <div class="nav_con">
+    <ul>
+      <li class="cur_index"><a href="/">首页</a></li>
+      {dede:channel type='top' row='10' currentstyle="
+      <li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>
+      "}
+      <li><a href="[field:typeurl/]" >[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+  </div>
+</div>

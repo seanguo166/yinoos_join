@@ -1,0 +1,1 @@
+<li style="border-top:dashed 0px #ddd !important;"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>

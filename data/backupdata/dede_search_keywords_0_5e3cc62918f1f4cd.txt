@@ -1,0 +1,5 @@
+INSERT INTO `dede_search_keywords` VALUES('1','广发华福规划飞','广发华福规划飞 华福 广发 规划','1','0','1434176091','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','人托人','人托人 托人','1','0','1434176098','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','一个欢庆的季节','一个欢庆的季节 一个 季节 欢庆','2','0','1434176164','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','订对景区酒店','订对景区酒店 景区 酒店','2','1','1434186977','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','55','55','1','0','1435032654','0','0');

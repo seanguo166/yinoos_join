@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>加盟合作 > 加盟支持_厦门温德姆和平国际大酒店</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/skin/css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/skin/js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var screen_width = window.screen.width;
+		var body_width = window.document.body.clientWidth;
+
+		if(body_width <= 1280){
+			if(screen_width <= 1280){
+				$('body').css('width','1280px');
+			}else{
+				$('body').css('width',screen_width);
+			}
+			
+		}else {
+			$('body').css('width',screen_width-20);
+		}
+
+
+	});
+</script>
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab(name,cursel,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+ }
+}
+//-->
+
+function addFavorite2() {
+    var url = window.location;
+    var title = document.title;
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf("360se") > -1) {
+        alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+    }
+    else if (ua.indexOf("msie 8") > -1) {
+        window.external.AddToFavoritesBar(url, title); //IE8
+    }
+    else if (document.all) {
+  try{
+   window.external.addFavorite(url, title);
+  }catch(e){
+   alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+  }
+    }
+    else if (window.sidebar) {
+        window.sidebar.addPanel(title, url, "");
+    }
+    else {
+  alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+    }
+}
+
+//设为首页 <a onclick="SetHome(this,window.location)">设为首页</a>
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+</script>
+</head>
+
+<body>
+<div class="top">
+  <div class="top_con">
+    <div class="top_con_l float"> 欢迎来到XXXXXXX </div>
+    <div class="top_con_r"> <a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://t.com');">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://t.com','厦门温德姆和平国际大酒店')">加入收藏</a> <a> <img src="/skin/images/1_03.jpg" /> 官方微信 <img src="/skin/images/wei_1.jpg" class="weibo_img"/> </a> <a> <img src="/skin/images/2_04.jpg" /> 微信 <img src="/skin/images/wei_2.jpg" class="weibo_img"/> </a> <a href="http://weibo.com/" target="_blank"><img src="/skin/images/to_young.jpg" />致青春微博</a> </div>
+  </div>
+</div>
+<div class="header">
+  <div class="header_con">
+    <div class="logo float">
+      <h1><a href="/"></a></h1>
+    </div>
+    <div class="phone"></div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="nav">
+  <div class="nav_con">
+    <ul>
+      <li class="cur_index"><a href="/">首页</a></li>
+      
+      <li><a href="/a/guanyuwomen/" >关于我们</a></li>
+      
+      <li><a href="/a/qixiapinpai/" >旗下品牌</a></li>
+      
+      <li><a href="/a/xinwenzixun/" >新闻资讯</a></li>
+      
+      <li><a href="/a/huiyuanzhongxin/" >会员中心</a></li>
+      
+      <li><a href="/a/jingcaizhuanti/" >精彩专题</a></li>
+      <li class='hover'><a href='/a/jiamenghezuo/' ><span>加盟合作</span></a></li>
+      <li><a href="/a/lianxiwomen/" >联系我们</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="news">
+  <div class="news_l float">
+    <div class="new">
+      <h2><img src="/skin/images/50.jpg" /> </h2>
+      <ul>
+        
+        <li><a href="/a/jiamenghezuo/jiamengyoushi/">加盟优势</a></li>
+        <li><a href='/a/jiamenghezuo/jiamengzhichi/' class='left_current'>加盟支持</a></li>
+        <li><a href="/a/jiamenghezuo/jiamengtiaojian/">加盟条件</a></li>
+        
+        <li><a href="/a/jiamenghezuo/jiamengfeiyong/">加盟费用</a></li>
+        
+      </ul>
+    </div>
+    <div class="tutu"><img src="/skin/images/011_21.jpg" /></div>
+  </div>
+  <div class="news_r">
+    <div class="news_con about_con">
+      <h2 class="news_con_h2">加盟支持</h2>
+      <div class="sec_con" > <div class="sec_con ">
+	<!--right--con--start--><!--加盟支持--start-->
+	<div class="join_zhichi">
+		<h3>
+			<img src="/uploads/allimg/150613/1-150613153H4439.jpg" /></h3>
+		<div class="zhichi_con">
+			<p>
+				1、统一的、完整的企业品牌形象识别系统<br />
+				2、东方怡然统一的产品推广、展会促销<br />
+				3、全国和地区性统一的品牌建设<br />
+				4、全国范围内主要出版物上的平面媒体及软性文章宣传投放<br />
+				5、针对不同地区或单个酒店的专项广告策划<br />
+				6、东方怡然旗下所有酒店的互相订房、前台互荐促销广告</p>
+			<h3>
+				<img src="/uploads/allimg/150613/1-150613153I3443.jpg" /></h3>
+			<p>
+				1、整合网络、呼叫中心（400）、短信、微信为一体的中央预订系统<br />
+				2、东方怡然中央客户网络数据共享<br />
+				3、东方怡然网站营销主推<br />
+				4、东方怡然集团与全国各大网络订房公司的联合销售<br />
+				5、专业的销售收入、收益增长咨询</p>
+			<h3>
+				<img src="/uploads/allimg/150613/1-150613153J1446.jpg" /></h3>
+			<p>
+				1、完善的服务与咨询<br />
+				2、酒店开业筹备协助、开业验收、专业的酒店营运咨询服务<br />
+				3、经营成本控制分析与指导<br />
+				4、工程规划、设计及现场施工指导，工程材料设备的咨询<br />
+				5、标准化、集团化的中央采购渠道保证品质和优良的价格<br />
+				6、人事与培训<br />
+				7、酒店总经理的招聘与委任<br />
+				8、酒店员工的招聘与培训<br />
+				9、酒店管理人员绩效考评</p>
+			<h3>
+				<img src="/uploads/allimg/150613/1-150613153K2H7.jpg" /></h3>
+			<p>
+				1、东方怡然酒店管理学院系统培训和学习<br />
+				2、针对特许经营酒店的初始培训、强制性培训计划<br />
+				3、全方位、多层次的专项选择性培训课程</p>
+			<h3>
+				<img src="/uploads/allimg/150613/1-150613153P4234.jpg" /></h3>
+			<p>
+				1、专业的酒店营运咨询服务<br />
+				2、标准化的服务质量管理系统、质量改进方案和跟进系统<br />
+				3、每季度/半年的质量检查<br />
+				4、保证酒店客人满意度的控制方案</p>
+			<h3>
+				<img src="/uploads/allimg/150613/1-150613153Q1T2.jpg" /></h3>
+			<p>
+				会员输出支持，建立独立的会员网站，会员预订、会员优惠活动专区、会员专享服务、会员积分兑奖、会员活动新闻、会员商务平台、会员交友会等，为加盟商带来专附产品，缩短资金回收期，增加赢利点。</p>
+			<h3>
+				<img src="/uploads/allimg/150613/1-150613153QK19.jpg" /></h3>
+			<p>
+				我们承诺：入住率&le;60%，免收管理费，入住率&ge;60-70%，只收取营业收入1%的管理费，入住率&ge;70-80%，收取2%的管理费，入住率&ge;80-90%，收取营业额的3%管理费，<span>入住率&ge;90%，收取营业额的5%管理费</span></p>
+			<h3>
+				<img src="/uploads/allimg/150613/1-150613153R3X9.jpg" /></h3>
+			<h3>
+				<img src="/uploads/allimg/150613/1-150613153S2P2.jpg" /></h3>
+		</div>
+	</div>
+	<!--加盟支持--end--><!--right--con--end--></div>
+<br />
+ </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+<div class="footer">
+  <div class="footer_con">
+    <div class="logo2 float">
+      <div class="right">
+        <p> Copyright &copy; 2002-2015 乐高网络 版权所有 备案号：京ICP备16556745号<br />
+          地址：厦门市国贸与英协路交叉口盛润国际广场 邮箱：407898028@qq.com <br />
+          BY: <a href="#" target="_blank">网站地图</a></p>
+      </div>
+    </div>
+    <div class="footer_r">
+      <div class="pic">
+        <ul>
+          <li><a href="#"><img src="/skin/images/wei_1.jpg" /></a></li>
+          <li><a href="#"><img src="/skin/images/wei_2.jpg" /></a></li>
+          <li><a href="#"><img src="/skin/images/wei_3.jpg" /></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="con">
+      <ul>
+        <li><a><img src="/skin/images/63_03.jpg" />东方怡然微信</a></li>
+        <li><a><img src="/skin/images/63_06.jpg" />致青春微信</a></li>
+        <li><a href="http://weibo.com/" target="_blank"><img src="/skin/images/63_03.jpg" />致青春微博</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+//close_img 
+function closeimg(){
+
+	var screen_width = window.screen.width;
+	var body_width = window.document.body.clientWidth;
+
+	$(".kefu_div").animate({right:"-150px"});
+	
+}
+
+function showimg(){
+	$(".kefu_div").animate({right:"0px"});
+}
+</script> 
+<!--kefu--start-->
+<div class=qqbox id=divQQbox style="TOP: 200px">
+  <div class="kefu_div"> <img src="/skin/images/close_img.jpg" id="close_img" onclick="closeimg();"> <img src="/skin/images/kefu_img.png" id="kefu_img"  onclick="showimg();">
+    <ul class="kefu_ul">
+      <li><a target="_blank" title="加盟咨询" href="tencent://message/?uin=2689722310&Site=加盟咨询&Menu=yes"><img src="/skin/images/cb2e2f0d1217493eb4f04027e5f172c3.gif">加盟咨询</a></li>
+      <li><a target="_blank" title="网站业务" href="tencent://message/?uin=50897695&Site=网站业务&Menu=yes"><img src="/skin/images/8ba9088559504be3a4544e4eac461a59.gif">网站业务</a></li>
+    </ul>
+    <div class="kefu_bo"></div>
+  </div>
+</div>
+<script language="javascript">
+var tips; 
+var theTop = 100;
+var old = theTop;
+function initFloatTips() 
+{ 
+tips = document.getElementById('divQQbox');
+moveTips();
+}
+function moveTips()
+{
+var tt=50; 
+if (window.innerHeight) 
+{
+pos = window.pageYOffset 
+}else if (document.documentElement && document.documentElement.scrollTop) {
+pos = document.documentElement.scrollTop 
+}else if (document.body) {
+pos = document.body.scrollTop; 
+}
+pos=pos-tips.offsetTop+theTop; 
+pos=tips.offsetTop+pos/10; 
+if (pos < theTop){
+pos = theTop;
+}
+if (pos != old) { 
+tips.style.top = pos+"px";
+tt=10; //alert(tips.style.top); 
+}
+old = pos;
+setTimeout(moveTips,tt);
+}
+initFloatTips();
+if(typeof(HTMLElement)!="undefined") //firefox定义contains()方法，ie下不起作用
+{ 
+HTMLElement.prototype.contains=function (obj) 
+{ 
+while(obj!=null&&typeof(obj.tagName)!="undefind"){
+if(obj==this) return true; 
+obj=obj.parentNode;
+} 
+return false; 
+}
+}
+
+
+</script> 
+<!--kefu--end-->
+</body>
+</html>

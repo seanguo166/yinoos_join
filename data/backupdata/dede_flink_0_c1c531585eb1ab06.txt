@@ -1,0 +1,3 @@
+INSERT INTO `dede_flink` VALUES('10','1','http://shop58215396.taobao.com','织梦模板','','','','1434178883','1','2');
+INSERT INTO `dede_flink` VALUES('11','1','http://shop58215396.taobao.com','织梦源码','','','','1434178889','1','2');
+INSERT INTO `dede_flink` VALUES('13','1','http://shop58215396.taobao.com','技术支持','','','','1434178902','1','2');

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/skin/css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/skin/js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var screen_width = window.screen.width;
+		var body_width = window.document.body.clientWidth;
+
+		if(body_width <= 1280){
+			if(screen_width <= 1280){
+				$('body').css('width','1280px');
+			}else{
+				$('body').css('width',screen_width);
+			}
+			
+		}else {
+			$('body').css('width',screen_width-20);
+		}
+
+
+	});
+</script>
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab(name,cursel,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+ }
+}
+//-->
+
+function addFavorite2() {
+    var url = window.location;
+    var title = document.title;
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf("360se") > -1) {
+        alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+    }
+    else if (ua.indexOf("msie 8") > -1) {
+        window.external.AddToFavoritesBar(url, title); //IE8
+    }
+    else if (document.all) {
+  try{
+   window.external.addFavorite(url, title);
+  }catch(e){
+   alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+  }
+    }
+    else if (window.sidebar) {
+        window.sidebar.addPanel(title, url, "");
+    }
+    else {
+  alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+    }
+}
+
+//设为首页 <a onclick="SetHome(this,window.location)">设为首页</a>
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+</script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="news">
+  <div class="news_l float">
+    <div class="new">
+      <h2><img src="/skin/images/011_06.jpg" /></h2>
+      <ul>
+        {dede:channel type='son' currentstyle="
+        <li><a href='~typelink~' class='left_current'>~typename~</a></li>
+        "}
+        <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+    <div class="tutu"><img src="/skin/images/011_21.jpg" /></div>
+  </div>
+  <div class="news_r">
+    <div class="news_con">
+      <h2 class="news_con_h2">{dede:field name='typename'/}</h2>
+      <div><img src="/skin/images/011_09.jpg" /></div>
+      <div class=""> 
+        <!--right--con--start-->
+        <ul class="sec_news_ul">
+          {dede:list pagesize='5'}
+          <li> <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]"></a>
+            <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+            <p>[field:description function='cn_substr(@me,200)'/]...</p>
+            <a href="[field:arcurl/]" title="[field:title/]" class="a_more">查看详细</a> </li>
+          {/dede:list}
+        </ul>
+        <!--list-page--start-->
+        <div class="dede_pages">{dede:pagelist listitem="index,end,pre,next,pageno" /}</div>
+        <!--list-page--end--> 
+        <!--right--con--end--> 
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

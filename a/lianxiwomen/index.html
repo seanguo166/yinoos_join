@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>联系我们_厦门温德姆和平国际大酒店</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/skin/css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/skin/js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var screen_width = window.screen.width;
+		var body_width = window.document.body.clientWidth;
+
+		if(body_width <= 1280){
+			if(screen_width <= 1280){
+				$('body').css('width','1280px');
+			}else{
+				$('body').css('width',screen_width);
+			}
+			
+		}else {
+			$('body').css('width',screen_width-20);
+		}
+
+
+	});
+</script>
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab(name,cursel,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+ }
+}
+//-->
+
+function addFavorite2() {
+    var url = window.location;
+    var title = document.title;
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf("360se") > -1) {
+        alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+    }
+    else if (ua.indexOf("msie 8") > -1) {
+        window.external.AddToFavoritesBar(url, title); //IE8
+    }
+    else if (document.all) {
+  try{
+   window.external.addFavorite(url, title);
+  }catch(e){
+   alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+  }
+    }
+    else if (window.sidebar) {
+        window.sidebar.addPanel(title, url, "");
+    }
+    else {
+  alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+    }
+}
+
+//设为首页 <a onclick="SetHome(this,window.location)">设为首页</a>
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+</script>
+</head>
+
+<body>
+<div class="top">
+  <div class="top_con">
+    <div class="top_con_l float"> 欢迎来到XXXXXXX </div>
+    <div class="top_con_r"> <a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://t.com');">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://t.com','厦门温德姆和平国际大酒店')">加入收藏</a> <a> <img src="/skin/images/1_03.jpg" /> 官方微信 <img src="/skin/images/wei_1.jpg" class="weibo_img"/> </a> <a> <img src="/skin/images/2_04.jpg" /> 微信 <img src="/skin/images/wei_2.jpg" class="weibo_img"/> </a> <a href="http://weibo.com/" target="_blank"><img src="/skin/images/to_young.jpg" />致青春微博</a> </div>
+  </div>
+</div>
+<div class="header">
+  <div class="header_con">
+    <div class="logo float">
+      <h1><a href="/"></a></h1>
+    </div>
+    <div class="phone"></div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="nav">
+  <div class="nav_con">
+    <ul>
+      <li class="cur_index"><a href="/">首页</a></li>
+      
+      <li><a href="/a/guanyuwomen/" >关于我们</a></li>
+      
+      <li><a href="/a/qixiapinpai/" >旗下品牌</a></li>
+      
+      <li><a href="/a/xinwenzixun/" >新闻资讯</a></li>
+      
+      <li><a href="/a/huiyuanzhongxin/" >会员中心</a></li>
+      
+      <li><a href="/a/jingcaizhuanti/" >精彩专题</a></li>
+      
+      <li><a href="/a/jiamenghezuo/" >加盟合作</a></li>
+      <li class='hover'><a href='/a/lianxiwomen/' ><span>联系我们</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="news">
+  <div class="news_l float">
+    <div class="new">
+      <h2><img src="/skin/images/contact_left.jpg" /> </h2>
+      <ul>
+        
+        <li><a href="/a/lianxiwomen/lianxiwomen/">联系我们</a></li>
+        
+        <li><a href="/a/lianxiwomen/zaixianliuyan/">在线留言</a></li>
+        
+      </ul>
+    </div>
+    <div class="tutu"><img src="/skin/images/011_21.jpg" /></div>
+  </div>
+  <div class="news_r">
+    <div class="news_con about_con">
+      <h2 class="news_con_h2">联系我们</h2>
+      <div class="sec_con" > <img src="/uploads/allimg/150613/1-150613154445J3.jpg" />
+<div class="sec_con">
+	<!--right--con--start-->
+	<div class="contact_con_con">
+		<p class="p0">
+			&nbsp;</p>
+		<p>
+			北京东方某某酒店管理有限公司</p>
+		<p>
+			<span style="line-height:1.5;">地址：</span><span style="line-height:1.5;">海南省海口市金水路与英协路交叉口盛润国际广场东塔</span></p>
+		<p>
+			加盟热线：400-9999-821</p>
+		<p>
+			致青春主题酒店</p>
+		<p>
+			订房热线：400-0101-521</p>
+		<p>
+			致青春英协路店</p>
+		<p>
+			地址：河南省郑州市英协路与福元路交叉口向南20米路东</p>
+		<p>
+			订房电话：0371-53318899</p>
+		<p>
+			<span style="line-height:1.5;">致青春红专路店</span></p>
+		<p>
+			<span style="line-height:1.5;">地址：河南省郑州市红专路与经五路交叉口向东50米路南</span></p>
+		<p>
+			<span>订房电话：0371-53318800</span></p>
+	</div>
+	<div class="ditu">
+		<!--map--start--><script type="text/javascript" src="http://api.map.baidu.com/api?key=&amp;v=1.1&amp;services=true"></script><script type="text/javascript" src="http://api.map.baidu.com/getscript?v=1.1&amp;ak=&amp;services=true&amp;t=20130716024058"></script></div>
+</div>
+<link href="http://api.map.baidu.com/res/11/bmap.css" rel="stylesheet" type="text/css" />
+<!--百度地图容器-->
+<div id="dituContent" style="width: 775px; height: 455px; border: 1px solid rgb(204, 204, 204); overflow: hidden; position: relative; z-index: 0; color: rgb(0, 0, 0); text-align: left; background-image: url(http://api.map.baidu.com/images/bg.png);">
+	<div id="platform" style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 1190px; cursor: url(http://api.map.baidu.com/images/openhand.cur) 8 8, default;">
+		<div class="BMap_mask" id="mask" style="position: absolute; left: 0px; top: -1190px; z-index: 9; overflow: hidden; -webkit-user-select: none; width: 775px; height: 455px;">
+			&nbsp;</div>
+		<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;">
+			<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;">
+				<div class="pop" style="position: absolute; cursor: default; left: 467px; top: -1180px;">
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 0px; width: 25px; height: 25px;">
+						<img src="http://api.map.baidu.com/images/iw3.png" style="border:none;margin:0px;padding:0px;position:absolute;left:0px;top:0px;width:690px;height:786px;" /></div>
+					<div class="top" style="overflow: hidden; z-index: 1; position: absolute; left: 25px; top: 0px; width: 202px; height: 25px;">
+						<img src="http://api.map.baidu.com/images/iw3.png" style="position:absolute; left: -65px; top: -60px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 227px; top: 0px; width: 25px; height: 25px;">
+						<img src="http://api.map.baidu.com/images/iw3.png" style="border:none;margin:0px;padding:0px;position:absolute;left:-665px;top:0px;width:690px;height:786px;" /></div>
+					<div class="center" style="overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 25px; width: 250px; height: 37px;">
+						<img src="http://api.map.baidu.com/images/iw3.png" style="position:absolute;left:-65px;top:-60px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 62px; width: 25px; height: 25px;">
+						<img src="http://api.map.baidu.com/images/iw3.png" style="border:none;margin:0px;padding:0px;position:absolute;left:0px;top:-665px;width:690px;height:786px;" /></div>
+					<div class="bottom" style="overflow: hidden; z-index: 1; position: absolute; left: 25px; top: 62px; width: 202px; height: 24px;">
+						<img src="http://api.map.baidu.com/images/iw3.png" style="position:absolute;left:-65px;top:-146px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 227px; top: 62px; width: 25px; height: 25px;">
+						<img src="http://api.map.baidu.com/images/iw3.png" style="border:none;margin:0px;padding:0px;position:absolute;left:-665px;top:-665px;width:690px;height:786px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 109px; top: 62px; width: 34px; height: 50px;">
+						<img src="http://api.map.baidu.com/images/iw3.png" style="border:none;margin:0px;padding:0px;position:absolute;left:-186px;top:-691px;width:690px;height:786px;" /></div>
+					<div style="width: 220px; height: 55px; position: absolute; left: 16px; top: 16px; z-index: 10; overflow: hidden;">
+						<div class="BMap_bubble_title" style="display: none; overflow: hidden; height: auto; line-height: 24px; white-space: nowrap; width: auto;">
+							&nbsp;</div>
+						<div class="BMap_bubble_content" style="width: auto; height: auto;">
+							<b class="iw_poi_title" title="北京东方某某酒店管理有限公司">北京东方某某酒店管理有限公司</b>
+							<div class="iw_poi_content">
+								金水路与英协路交叉口盛润国际广场东塔</div>
+						</div>
+						<div class="BMap_bubble_max_content" style="display: none; position: relative;">
+							&nbsp;</div>
+					</div>
+					<img src="http://api.map.baidu.com/images/iw_close.gif" style="position: absolute; top: 12px; width: 12px; height: 12px; cursor: pointer; z-index: 10000; left: 227px;" /><img src="http://api.map.baidu.com/images/iw_plus.gif" style="position: absolute; top: 12px; width: 12px; height: 12px; cursor: pointer; z-index: 10000; display: none; left: 207px;" /></div>
+			</div>
+			<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;">
+				&lt;span class=&quot;BMap_Marker BMap_noprint&quot; unselectable=&quot;on&quot; &quot;=&quot;&quot; style=&quot;position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; width: 23px; height: 25px; left: 559px; top: -1070px; z-index: -6953500; background: url(http://api.map.baidu.com/images/blank.gif);&quot; title=&quot;&quot;&gt;</div>
+			<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;">
+				<div class="shadow" style="position: absolute; left: 445px; top: -1136px;" type="infowindow_shadow">
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 36px; top: 0px; width: 70px; height: 30px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -323px; top: 0px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 106px; top: 0px; width: 163px; height: 30px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -393px; top: 0px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 269px; top: 0px; width: 70px; height: 30px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -1033px; top: 0px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 29px; top: 30px; width: 77px; height: 7px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="top: -30px; left: -316px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 106px; top: 30px; width: 185px; height: 7px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -360px; top: -30px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 291px; top: 30px; width: 77px; height: 7px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="top: -30px; left: -1056px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 37px; width: 50px; height: 60px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -14px; top: -310px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 50px; top: 37px; width: 11px; height: 60px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -255px; top: -310px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 61px; top: 37px; width: 140px; height: 60px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -440px; top: -310px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 201px; top: 37px; width: 61px; height: 60px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -255px; top: -310px;" /></div>
+					<div style="overflow: hidden; z-index: 1; position: absolute; left: 262px; top: 37px; width: 70px; height: 60px;">
+						<img onmousedown="return false" src="http://api.map.baidu.com/images/iws3.png" style="left: -754px; top: -310px;" /></div>
+				</div>
+			</div>
+			<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;">
+				&nbsp;</div>
+			<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;">
+				<div style="position: absolute; margin: 0px; padding: 0px; width: 23px; height: 25px; left: -9px; top: -25px; overflow: hidden;">
+					<span class="BMap_Marker" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 466px; top: -737px; z-index: -6952588;" unselectable="on"><img src="http://app.baidu.com/map/images/us_mk_icon.png" style="border:none;left:-46px; top:-21px; position:absolute;" /></span></div>
+				<span class="BMap_Marker" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 466px; top: -737px; z-index: -6952588;" unselectable="on"><label class="BMapLabel" style="position: absolute; display: none; cursor: pointer; border: 1px solid rgb(128, 128, 128); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, simsun; z-index: 80; color: rgb(51, 51, 51); -webkit-user-select: none; left: 13px; top: -20px; background-color: rgb(255, 255, 255);" unselectable="on">致青春英协路店</label></span>
+				<div style="position: absolute; margin: 0px; padding: 0px; width: 23px; height: 25px; left: -9px; top: -25px; overflow: hidden;">
+					<span class="BMap_Marker" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: -1788px; top: -2274px; z-index: -6957146;" unselectable="on"><img src="http://app.baidu.com/map/images/us_mk_icon.png" style="border:none;left:-46px; top:-21px; position:absolute;" /></span></div>
+				<span class="BMap_Marker" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: -1788px; top: -2274px; z-index: -6957146;" unselectable="on"><label class="BMapLabel" style="position: absolute; display: none; cursor: pointer; border: 1px solid rgb(128, 128, 128); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, simsun; z-index: 80; color: rgb(51, 51, 51); -webkit-user-select: none; left: 13px; top: -20px; background-color: rgb(255, 255, 255);" unselectable="on">致青春红专路店</label></span>
+				<div style="position: absolute; margin: 0px; padding: 0px; width: 23px; height: 25px; left: -9px; top: -25px; overflow: hidden;">
+					<span class="BMap_Marker" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 568px; top: -1045px; z-index: -6953500;" unselectable="on"><img src="http://app.baidu.com/map/images/us_mk_icon.png" style="border:none;left:-46px; top:-21px; position:absolute;" /></span></div>
+				<span class="BMap_Marker" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 568px; top: -1045px; z-index: -6953500;" unselectable="on"><label class="BMapLabel" style="position: absolute; display: none; cursor: pointer; border: 1px solid rgb(128, 128, 128); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, simsun; z-index: 80; color: rgb(51, 51, 51); -webkit-user-select: none; left: 13px; top: -20px; background-color: rgb(255, 255, 255);" unselectable="on">北京东方怡然酒店管理有限公司</label></span></div>
+			<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;">
+				&nbsp;</div>
+		</div>
+		<div style="position: absolute; z-index: -1; left: 387px; top: -962px;">
+			<img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=24725&amp;y=8023&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -304px; top: -357px;" /><img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=24726&amp;y=8022&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -48px; top: -101px;" /><img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=24727&amp;y=8021&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: 208px; top: 155px;" /><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=24726&amp;y=8021&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -48px; top: 155px;" /><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=24724&amp;y=8023&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -560px; top: -357px;" /><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=24725&amp;y=8022&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -304px; top: -101px;" /><img src="http://online4.map.bdimg.com/tile/?qt=tile&amp;x=24726&amp;y=8023&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -48px; top: -357px;" /><img src="http://online4.map.bdimg.com/tile/?qt=tile&amp;x=24727&amp;y=8022&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: 208px; top: -101px;" /><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=24725&amp;y=8021&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -304px; top: 155px;" /><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=24724&amp;y=8022&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -560px; top: -101px;" /><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=24727&amp;y=8023&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: 208px; top: -357px;" /><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=24724&amp;y=8021&amp;z=17&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -560px; top: 155px;" /></div>
+	</div>
+	<div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api.map.baidu.com/images/openhand.cur) 8 8,default">
+		<div class="BMap_zoomer" style="top:0;left:0;">
+			&nbsp;</div>
+		<div class="BMap_zoomer" style="top:0;right:0;">
+			&nbsp;</div>
+		<div class="BMap_zoomer" style="bottom:0;left:0;">
+			&nbsp;</div>
+		<div class="BMap_zoomer" style="bottom:0;right:0;">
+			&nbsp;</div>
+	</div>
+	<div class="anchorBL" style="height: 32px; position: absolute; z-index: 10; bottom: 0px; right: auto; top: auto; left: 1px;">
+		<a href="http://map.baidu.com/?sr=1" style="outline: none;" target="_blank" title="到百度地图首页"><img src="http://api.map.baidu.com/images/copyright_logo.png" style="border:none;width:77px;height:32px" /></a></div>
+	<div class="BMap_cpyCtrl anchorBL" style="cursor: default; white-space: nowrap; bottom: 2px; right: auto; top: auto; left: 81px; position: absolute; z-index: 10;" unselectable="on">
+		<span _cid="1" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: arial, simsun; display: inline; background: none;">&copy; 2015 Baidu</span></div>
+	<div class="BMap_stdMpCtrl BMap_stdMpType0 BMap_noprint anchorTL" style="width: 52px; height: 226px; bottom: auto; right: auto; top: 10px; left: 10px; position: absolute; z-index: 1100;" unselectable="on">
+		<div class="BMap_stdMpPan">
+			<div class="BMap_button BMap_panN" title="向上平移">
+				&nbsp;</div>
+			<div class="BMap_button BMap_panW" title="向左平移">
+				&nbsp;</div>
+			<div class="BMap_button BMap_panE" title="向右平移">
+				&nbsp;</div>
+			<div class="BMap_button BMap_panS" title="向下平移">
+				&nbsp;</div>
+			<div class="BMap_stdMpPanBg BMap_smcbg">
+				&nbsp;</div>
+		</div>
+		<div class="BMap_stdMpZoom" style="height: 167px; width: 52px;">
+			<div style="height: 167px; width: 37px;">
+				<div class="BMap_button BMap_stdMpZoomIn" title="放大一级">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+				<div class="BMap_button BMap_stdMpZoomOut" title="缩小一级">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+			</div>
+			<div class="BMap_stdMpSlider" style="height: 133px;">
+				<div class="BMap_stdMpSliderBgTop" style="height: 124px;">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+				<div class="BMap_stdMpSliderBgBot" style="top: 124px;">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+				<div class="BMap_stdMpSliderMask" title="放置到此级别">
+					&nbsp;</div>
+				<div class="BMap_stdMpSliderBar" style="cursor: url(http://api.map.baidu.com/images/openhand.cur) 8 8, default; top: 8px;" title="拖动缩放">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+			</div>
+			<div class="BMap_zlHolder">
+				<div class="BMap_zlSt">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+				<div class="BMap_zlCity">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+				<div class="BMap_zlProv">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+				<div class="BMap_zlCountry">
+					<div class="BMap_smcbg">
+						&nbsp;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="BMap_omCtrl BMap_noprint anchorBR quad4" style="width: 150px; height: 150px; bottom: 0px; right: 0px; top: auto; left: auto; position: absolute; z-index: 10;" unselectable="on">
+		<div class="BMap_omOutFrame" style="width: 149px; height: 149px;">
+			<div class="BMap_omInnFrame" style="bottom: auto; right: auto; top: 8px; left: 8px; width: 139px; height: 139px;">
+				<div class="BMap_omMapContainer" style="overflow: hidden; color: rgb(0, 0, 0); text-align: left; background-image: url(http://api.map.baidu.com/images/bg.png);">
+					<div id="platform" style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 75px; cursor: url(http://api.map.baidu.com/images/openhand.cur) 8 8, default;">
+						<div class="BMap_mask" id="mask" style="position: absolute; left: 0px; top: -75px; z-index: 9; overflow: hidden; -webkit-user-select: none; width: 139px; height: 139px;">
+							&nbsp;</div>
+						<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;">
+							<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;">
+								&nbsp;</div>
+							<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;">
+								<div class="BMap_Division" style="position: absolute; width: 48px; display: block; overflow: hidden; border-width: 1px; border-style: solid; border-color: rgb(173, 207, 244) rgb(39, 75, 139) rgb(39, 75, 139) rgb(132, 176, 223); opacity: 1; z-index: 60; -webkit-user-select: none; left: 45px; top: -20px; height: 28px;">
+									<div class="BMap_omViewInnFrame" style="width: 46px; height: 26px;">
+										<div class="BMap_omViewMask">
+											&nbsp;</div>
+									</div>
+								</div>
+							</div>
+							<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;">
+								&nbsp;</div>
+							<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;">
+								&nbsp;</div>
+							<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;">
+								&nbsp;</div>
+							<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;">
+								&nbsp;</div>
+						</div>
+						<div style="position: absolute; z-index: -1; left: 69px; top: -5px;">
+							<img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=1545&amp;y=501&amp;z=13&amp;styles=pl&amp;udt=20140928" style="position: absolute; border: none; width: 256px; height: 256px; left: -99px; top: -150px;" /></div>
+					</div>
+				</div>
+				<div class="BMap_omViewMv" style="cursor: url(http://api.map.baidu.com/images/openhand.cur) 8 8, default; width: 48px; height: 28px; left: 45px; top: 55px;">
+					<div class="BMap_omViewInnFrame" style="width: 46px; height: 26px;">
+						<div>
+							&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="BMap_omBtn" style="bottom: 0px; right: 0px; top: auto; left: auto;">
+			&nbsp;</div>
+	</div>
+	<div class="BMap_scaleCtrl BMap_noprint anchorBL" style="bottom: 18px; right: auto; top: auto; left: 81px; width: 65px; position: absolute; z-index: 10;" unselectable="on">
+		<div class="BMap_scaleTxt" unselectable="on">
+			100&nbsp;米</div>
+		<div class="BMap_scaleBar BMap_scaleHBar">
+			<img src="http://api.map.baidu.com/images/mapctrls11.png" style="border:none" /></div>
+		<div class="BMap_scaleBar BMap_scaleLBar">
+			<img src="http://api.map.baidu.com/images/mapctrls11.png" style="border:none" /></div>
+		<div class="BMap_scaleBar BMap_scaleRBar">
+			<img src="http://api.map.baidu.com/images/mapctrls11.png" style="border:none" /></div>
+	</div>
+</div>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.723761,34.748644);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+
+
+
+    //标注点数组
+     var markerArr = [{title:"致青春英协路店",content:"河南省郑州市英协路与福元路交叉口向南20米路东<br/>订房热线：0371-53318899 ",point:"113.725172|34.762946",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}},{title:"致青春红专路店",content:"河南省郑州市红专路与经五路交叉口向东50米路南<br/>订房热线：0371-53318800",point:"113.684672|34.785737",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}},{title:"北京东方某某酒店管理有限公司",content:"金水路与英协路交叉口盛润国际广场东塔",point:"113.726999|34.767507",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}];
+
+
+
+
+
+
+
+
+
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script><!--map--end--><!--right--con--end--> </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+<div class="footer">
+  <div class="footer_con">
+    <div class="logo2 float">
+      <div class="right">
+        <p> Copyright &copy; 2002-2015 乐高网络 版权所有 备案号：京ICP备16556745号<br />
+          地址：厦门市国贸与英协路交叉口盛润国际广场 邮箱：407898028@qq.com <br />
+          BY: <a href="#" target="_blank">网站地图</a></p>
+      </div>
+    </div>
+    <div class="footer_r">
+      <div class="pic">
+        <ul>
+          <li><a href="#"><img src="/skin/images/wei_1.jpg" /></a></li>
+          <li><a href="#"><img src="/skin/images/wei_2.jpg" /></a></li>
+          <li><a href="#"><img src="/skin/images/wei_3.jpg" /></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="con">
+      <ul>
+        <li><a><img src="/skin/images/63_03.jpg" />东方怡然微信</a></li>
+        <li><a><img src="/skin/images/63_06.jpg" />致青春微信</a></li>
+        <li><a href="http://weibo.com/" target="_blank"><img src="/skin/images/63_03.jpg" />致青春微博</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+//close_img 
+function closeimg(){
+
+	var screen_width = window.screen.width;
+	var body_width = window.document.body.clientWidth;
+
+	$(".kefu_div").animate({right:"-150px"});
+	
+}
+
+function showimg(){
+	$(".kefu_div").animate({right:"0px"});
+}
+</script> 
+<!--kefu--start-->
+<div class=qqbox id=divQQbox style="TOP: 200px">
+  <div class="kefu_div"> <img src="/skin/images/close_img.jpg" id="close_img" onclick="closeimg();"> <img src="/skin/images/kefu_img.png" id="kefu_img"  onclick="showimg();">
+    <ul class="kefu_ul">
+      <li><a target="_blank" title="加盟咨询" href="tencent://message/?uin=2689722310&Site=加盟咨询&Menu=yes"><img src="/skin/images/cb2e2f0d1217493eb4f04027e5f172c3.gif">加盟咨询</a></li>
+      <li><a target="_blank" title="网站业务" href="tencent://message/?uin=50897695&Site=网站业务&Menu=yes"><img src="/skin/images/8ba9088559504be3a4544e4eac461a59.gif">网站业务</a></li>
+    </ul>
+    <div class="kefu_bo"></div>
+  </div>
+</div>
+<script language="javascript">
+var tips; 
+var theTop = 100;
+var old = theTop;
+function initFloatTips() 
+{ 
+tips = document.getElementById('divQQbox');
+moveTips();
+}
+function moveTips()
+{
+var tt=50; 
+if (window.innerHeight) 
+{
+pos = window.pageYOffset 
+}else if (document.documentElement && document.documentElement.scrollTop) {
+pos = document.documentElement.scrollTop 
+}else if (document.body) {
+pos = document.body.scrollTop; 
+}
+pos=pos-tips.offsetTop+theTop; 
+pos=tips.offsetTop+pos/10; 
+if (pos < theTop){
+pos = theTop;
+}
+if (pos != old) { 
+tips.style.top = pos+"px";
+tt=10; //alert(tips.style.top); 
+}
+old = pos;
+setTimeout(moveTips,tt);
+}
+initFloatTips();
+if(typeof(HTMLElement)!="undefined") //firefox定义contains()方法，ie下不起作用
+{ 
+HTMLElement.prototype.contains=function (obj) 
+{ 
+while(obj!=null&&typeof(obj.tagName)!="undefind"){
+if(obj==this) return true; 
+obj=obj.parentNode;
+} 
+return false; 
+}
+}
+
+
+</script> 
+<!--kefu--end-->
+</body>
+</html>
